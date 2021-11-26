@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1342ADB02EEF05E75A5F7629 /* Pods_Fawry_Task_Fawry_TaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C65704C52B60A95269374E9 /* Pods_Fawry_Task_Fawry_TaskUITests.framework */; };
 		4F56C4702751035C0028623B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56C46F2751035C0028623B /* AppDelegate.swift */; };
 		4F56C4722751035C0028623B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56C4712751035C0028623B /* SceneDelegate.swift */; };
 		4F56C4742751035C0028623B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56C4732751035C0028623B /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 		4F56C47F2751035D0028623B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F56C47D2751035D0028623B /* LaunchScreen.storyboard */; };
 		4F56C48A2751035D0028623B /* Fawry_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56C4892751035D0028623B /* Fawry_TaskTests.swift */; };
 		4F56C4952751035D0028623B /* Fawry_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56C4942751035D0028623B /* Fawry_TaskUITests.swift */; };
+		96668AF5C60E202998CCB255 /* Pods_Fawry_TaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FDACF22A135BB0C5B51F6F /* Pods_Fawry_TaskTests.framework */; };
+		DF384319D8E84ED6AE50F764 /* Pods_Fawry_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40152D62B06A55A746E5637C /* Pods_Fawry_Task.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16FDACF22A135BB0C5B51F6F /* Pods_Fawry_TaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fawry_TaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37B56B70E7732CC099782FF7 /* Pods-Fawry-Task-Fawry-TaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fawry-Task-Fawry-TaskUITests.release.xcconfig"; path = "Target Support Files/Pods-Fawry-Task-Fawry-TaskUITests/Pods-Fawry-Task-Fawry-TaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		40152D62B06A55A746E5637C /* Pods_Fawry_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fawry_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		497699ABA63091597869EC2B /* Pods-Fawry-TaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fawry-TaskTests.release.xcconfig"; path = "Target Support Files/Pods-Fawry-TaskTests/Pods-Fawry-TaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		4F56C46C2751035C0028623B /* Fawry-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fawry-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F56C46F2751035C0028623B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F56C4712751035C0028623B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +58,11 @@
 		4F56C4902751035D0028623B /* Fawry-TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fawry-TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F56C4942751035D0028623B /* Fawry_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fawry_TaskUITests.swift; sourceTree = "<group>"; };
 		4F56C4962751035E0028623B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C65704C52B60A95269374E9 /* Pods_Fawry_Task_Fawry_TaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fawry_Task_Fawry_TaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDBBF251F1F15FF5F997805F /* Pods-Fawry-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fawry-Task.debug.xcconfig"; path = "Target Support Files/Pods-Fawry-Task/Pods-Fawry-Task.debug.xcconfig"; sourceTree = "<group>"; };
+		C792EC29D57815E3C94E6CFF /* Pods-Fawry-Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fawry-Task.release.xcconfig"; path = "Target Support Files/Pods-Fawry-Task/Pods-Fawry-Task.release.xcconfig"; sourceTree = "<group>"; };
+		EBCF0B6EB31F2F6811F12B67 /* Pods-Fawry-TaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fawry-TaskTests.debug.xcconfig"; path = "Target Support Files/Pods-Fawry-TaskTests/Pods-Fawry-TaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE409A466CA07008415443AE /* Pods-Fawry-Task-Fawry-TaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fawry-Task-Fawry-TaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fawry-Task-Fawry-TaskUITests/Pods-Fawry-Task-Fawry-TaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF384319D8E84ED6AE50F764 /* Pods_Fawry_Task.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96668AF5C60E202998CCB255 /* Pods_Fawry_TaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1342ADB02EEF05E75A5F7629 /* Pods_Fawry_Task_Fawry_TaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				4F56C4882751035D0028623B /* Fawry-TaskTests */,
 				4F56C4932751035D0028623B /* Fawry-TaskUITests */,
 				4F56C46D2751035C0028623B /* Products */,
+				ADBF86DE1966E843AF1B854B /* Pods */,
+				8198FEF473A381C9BB1B67A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +148,30 @@
 			path = "Fawry-TaskUITests";
 			sourceTree = "<group>";
 		};
+		8198FEF473A381C9BB1B67A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40152D62B06A55A746E5637C /* Pods_Fawry_Task.framework */,
+				8C65704C52B60A95269374E9 /* Pods_Fawry_Task_Fawry_TaskUITests.framework */,
+				16FDACF22A135BB0C5B51F6F /* Pods_Fawry_TaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADBF86DE1966E843AF1B854B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDBBF251F1F15FF5F997805F /* Pods-Fawry-Task.debug.xcconfig */,
+				C792EC29D57815E3C94E6CFF /* Pods-Fawry-Task.release.xcconfig */,
+				EE409A466CA07008415443AE /* Pods-Fawry-Task-Fawry-TaskUITests.debug.xcconfig */,
+				37B56B70E7732CC099782FF7 /* Pods-Fawry-Task-Fawry-TaskUITests.release.xcconfig */,
+				EBCF0B6EB31F2F6811F12B67 /* Pods-Fawry-TaskTests.debug.xcconfig */,
+				497699ABA63091597869EC2B /* Pods-Fawry-TaskTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F56C4992751035E0028623B /* Build configuration list for PBXNativeTarget "Fawry-Task" */;
 			buildPhases = (
+				B15395DC47BA77FA6A917578 /* [CP] Check Pods Manifest.lock */,
 				4F56C4682751035C0028623B /* Sources */,
 				4F56C4692751035C0028623B /* Frameworks */,
 				4F56C46A2751035C0028623B /* Resources */,
+				20D8C3BCA28EE9E2BE1B92EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F56C49C2751035E0028623B /* Build configuration list for PBXNativeTarget "Fawry-TaskTests" */;
 			buildPhases = (
+				04A609B962600884BF41F353 /* [CP] Check Pods Manifest.lock */,
 				4F56C4812751035D0028623B /* Sources */,
 				4F56C4822751035D0028623B /* Frameworks */,
 				4F56C4832751035D0028623B /* Resources */,
@@ -173,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F56C49F2751035E0028623B /* Build configuration list for PBXNativeTarget "Fawry-TaskUITests" */;
 			buildPhases = (
+				18465957B929E01580CCAE6E /* [CP] Check Pods Manifest.lock */,
 				4F56C48C2751035D0028623B /* Sources */,
 				4F56C48D2751035D0028623B /* Frameworks */,
 				4F56C48E2751035D0028623B /* Resources */,
+				2CE9EE407C7E16D65B388197 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +301,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04A609B962600884BF41F353 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fawry-TaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18465957B929E01580CCAE6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fawry-Task-Fawry-TaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20D8C3BCA28EE9E2BE1B92EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fawry-Task/Pods-Fawry-Task-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fawry-Task/Pods-Fawry-Task-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fawry-Task/Pods-Fawry-Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CE9EE407C7E16D65B388197 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fawry-Task-Fawry-TaskUITests/Pods-Fawry-Task-Fawry-TaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fawry-Task-Fawry-TaskUITests/Pods-Fawry-Task-Fawry-TaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fawry-Task-Fawry-TaskUITests/Pods-Fawry-Task-Fawry-TaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B15395DC47BA77FA6A917578 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fawry-Task-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4F56C4682751035C0028623B /* Sources */ = {
@@ -437,6 +586,7 @@
 		};
 		4F56C49A2751035E0028623B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDBBF251F1F15FF5F997805F /* Pods-Fawry-Task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -455,6 +605,7 @@
 		};
 		4F56C49B2751035E0028623B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C792EC29D57815E3C94E6CFF /* Pods-Fawry-Task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,6 +624,7 @@
 		};
 		4F56C49D2751035E0028623B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBCF0B6EB31F2F6811F12B67 /* Pods-Fawry-TaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +646,7 @@
 		};
 		4F56C49E2751035E0028623B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 497699ABA63091597869EC2B /* Pods-Fawry-TaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +668,7 @@
 		};
 		4F56C4A02751035E0028623B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE409A466CA07008415443AE /* Pods-Fawry-Task-Fawry-TaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +688,7 @@
 		};
 		4F56C4A12751035E0028623B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37B56B70E7732CC099782FF7 /* Pods-Fawry-Task-Fawry-TaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
