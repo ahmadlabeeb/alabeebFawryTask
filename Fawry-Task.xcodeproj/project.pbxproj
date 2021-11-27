@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,15 @@
 		4F56C47F2751035D0028623B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F56C47D2751035D0028623B /* LaunchScreen.storyboard */; };
 		4F56C48A2751035D0028623B /* Fawry_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56C4892751035D0028623B /* Fawry_TaskTests.swift */; };
 		4F56C4952751035D0028623B /* Fawry_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56C4942751035D0028623B /* Fawry_TaskUITests.swift */; };
+		4F748A9027510D8A0072D9C4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F748A8E27510D8A0072D9C4 /* LoginViewController.swift */; };
+		4F748A9127510D8A0072D9C4 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F748A8F27510D8A0072D9C4 /* LoginViewController.xib */; };
+		4F748A9627510DA30072D9C4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F748A9527510DA30072D9C4 /* LoginViewModel.swift */; };
+		4F748AA027511FC40072D9C4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F748A9E27511FC40072D9C4 /* RegisterViewController.swift */; };
+		4F748AA127511FC40072D9C4 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F748A9F27511FC40072D9C4 /* RegisterViewController.xib */; };
+		4F748AA927511FE40072D9C4 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F748AA827511FE40072D9C4 /* RegisterViewModel.swift */; };
+		4F748AB327528B220072D9C4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F748AB127528B220072D9C4 /* HomeViewController.swift */; };
+		4F748AB427528B220072D9C4 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F748AB227528B220072D9C4 /* HomeViewController.xib */; };
+		4F748ABC27528B3A0072D9C4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F748ABB27528B3A0072D9C4 /* HomeViewModel.swift */; };
 		96668AF5C60E202998CCB255 /* Pods_Fawry_TaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FDACF22A135BB0C5B51F6F /* Pods_Fawry_TaskTests.framework */; };
 		DF384319D8E84ED6AE50F764 /* Pods_Fawry_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40152D62B06A55A746E5637C /* Pods_Fawry_Task.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +67,15 @@
 		4F56C4902751035D0028623B /* Fawry-TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fawry-TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F56C4942751035D0028623B /* Fawry_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fawry_TaskUITests.swift; sourceTree = "<group>"; };
 		4F56C4962751035E0028623B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F748A8E27510D8A0072D9C4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4F748A8F27510D8A0072D9C4 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		4F748A9527510DA30072D9C4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		4F748A9E27511FC40072D9C4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		4F748A9F27511FC40072D9C4 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		4F748AA827511FE40072D9C4 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		4F748AB127528B220072D9C4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4F748AB227528B220072D9C4 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		4F748ABB27528B3A0072D9C4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8C65704C52B60A95269374E9 /* Pods_Fawry_Task_Fawry_TaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fawry_Task_Fawry_TaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDBBF251F1F15FF5F997805F /* Pods-Fawry-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fawry-Task.debug.xcconfig"; path = "Target Support Files/Pods-Fawry-Task/Pods-Fawry-Task.debug.xcconfig"; sourceTree = "<group>"; };
 		C792EC29D57815E3C94E6CFF /* Pods-Fawry-Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fawry-Task.release.xcconfig"; path = "Target Support Files/Pods-Fawry-Task/Pods-Fawry-Task.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,14 +136,9 @@
 		4F56C46E2751035C0028623B /* Fawry-Task */ = {
 			isa = PBXGroup;
 			children = (
-				4F56C46F2751035C0028623B /* AppDelegate.swift */,
-				4F56C4712751035C0028623B /* SceneDelegate.swift */,
-				4F56C4732751035C0028623B /* ViewController.swift */,
-				4F56C4752751035C0028623B /* Main.storyboard */,
-				4F56C47B2751035D0028623B /* Assets.xcassets */,
-				4F56C47D2751035D0028623B /* LaunchScreen.storyboard */,
-				4F56C4802751035D0028623B /* Info.plist */,
-				4F56C4782751035C0028623B /* Fawry_Task.xcdatamodeld */,
+				4F748A8727510D210072D9C4 /* App */,
+				4F748A8C27510D540072D9C4 /* Scenes */,
+				4F748A8B27510D3A0072D9C4 /* Resources */,
 			);
 			path = "Fawry-Task";
 			sourceTree = "<group>";
@@ -148,6 +161,68 @@
 			path = "Fawry-TaskUITests";
 			sourceTree = "<group>";
 		};
+		4F748A8727510D210072D9C4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4F56C46F2751035C0028623B /* AppDelegate.swift */,
+				4F56C4712751035C0028623B /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4F748A8B27510D3A0072D9C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F56C4752751035C0028623B /* Main.storyboard */,
+				4F56C47B2751035D0028623B /* Assets.xcassets */,
+				4F56C47D2751035D0028623B /* LaunchScreen.storyboard */,
+				4F56C4802751035D0028623B /* Info.plist */,
+				4F56C4782751035C0028623B /* Fawry_Task.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4F748A8C27510D540072D9C4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4F748AB027528AFF0072D9C4 /* HomeScreen */,
+				4F748A9D27511F6E0072D9C4 /* Registration */,
+				4F748A8D27510D680072D9C4 /* LoginModule */,
+				4F56C4732751035C0028623B /* ViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4F748A8D27510D680072D9C4 /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				4F748A8F27510D8A0072D9C4 /* LoginViewController.xib */,
+				4F748A8E27510D8A0072D9C4 /* LoginViewController.swift */,
+				4F748A9527510DA30072D9C4 /* LoginViewModel.swift */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		4F748A9D27511F6E0072D9C4 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				4F748AA827511FE40072D9C4 /* RegisterViewModel.swift */,
+				4F748A9E27511FC40072D9C4 /* RegisterViewController.swift */,
+				4F748A9F27511FC40072D9C4 /* RegisterViewController.xib */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		4F748AB027528AFF0072D9C4 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4F748ABB27528B3A0072D9C4 /* HomeViewModel.swift */,
+				4F748AB127528B220072D9C4 /* HomeViewController.swift */,
+				4F748AB227528B220072D9C4 /* HomeViewController.xib */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
 		8198FEF473A381C9BB1B67A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +243,6 @@
 				EBCF0B6EB31F2F6811F12B67 /* Pods-Fawry-TaskTests.debug.xcconfig */,
 				497699ABA63091597869EC2B /* Pods-Fawry-TaskTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -280,9 +354,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F748A9127510D8A0072D9C4 /* LoginViewController.xib in Resources */,
+				4F748AA127511FC40072D9C4 /* RegisterViewController.xib in Resources */,
 				4F56C47F2751035D0028623B /* LaunchScreen.storyboard in Resources */,
 				4F56C47C2751035D0028623B /* Assets.xcassets in Resources */,
 				4F56C4772751035C0028623B /* Main.storyboard in Resources */,
+				4F748AB427528B220072D9C4 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +489,13 @@
 			files = (
 				4F56C4742751035C0028623B /* ViewController.swift in Sources */,
 				4F56C4702751035C0028623B /* AppDelegate.swift in Sources */,
+				4F748AA027511FC40072D9C4 /* RegisterViewController.swift in Sources */,
+				4F748ABC27528B3A0072D9C4 /* HomeViewModel.swift in Sources */,
+				4F748AA927511FE40072D9C4 /* RegisterViewModel.swift in Sources */,
+				4F748A9627510DA30072D9C4 /* LoginViewModel.swift in Sources */,
+				4F748AB327528B220072D9C4 /* HomeViewController.swift in Sources */,
 				4F56C47A2751035C0028623B /* Fawry_Task.xcdatamodeld in Sources */,
+				4F748A9027510D8A0072D9C4 /* LoginViewController.swift in Sources */,
 				4F56C4722751035C0028623B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,7 +674,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Fawry-Task/Info.plist";
+				DEVELOPMENT_TEAM = 77H8P22UE4;
+				INFOPLIST_FILE = "$(SRCROOT)/Fawry-Task/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -610,7 +695,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Fawry-Task/Info.plist";
+				DEVELOPMENT_TEAM = 77H8P22UE4;
+				INFOPLIST_FILE = "$(SRCROOT)/Fawry-Task/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
