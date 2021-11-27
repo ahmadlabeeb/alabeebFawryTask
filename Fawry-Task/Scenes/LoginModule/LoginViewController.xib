@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -68,6 +69,7 @@
                                         <constraint firstItem="90h-ZN-SR1" firstAttribute="leading" secondItem="FyY-be-8PR" secondAttribute="leading" constant="5" id="N9q-cf-deQ"/>
                                         <constraint firstItem="90h-ZN-SR1" firstAttribute="top" secondItem="FyY-be-8PR" secondAttribute="top" constant="8" id="RZp-bS-eyu"/>
                                         <constraint firstAttribute="trailing" secondItem="zno-CU-RJd" secondAttribute="trailing" constant="5" id="Uvb-Rg-wkP"/>
+                                        <constraint firstAttribute="height" constant="46" id="bua-z6-fUC"/>
                                         <constraint firstItem="zno-CU-RJd" firstAttribute="leading" secondItem="90h-ZN-SR1" secondAttribute="trailing" constant="5" id="f27-6W-K8A"/>
                                         <constraint firstAttribute="bottom" secondItem="zno-CU-RJd" secondAttribute="bottom" constant="5" id="l4k-Hg-Oa9"/>
                                     </constraints>
@@ -118,7 +120,6 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="avB-8G-8PG" secondAttribute="bottom" constant="12" id="EXf-ea-9gL"/>
-                        <constraint firstAttribute="height" constant="135" id="GHb-y0-Umm"/>
                         <constraint firstItem="avB-8G-8PG" firstAttribute="top" secondItem="GVA-fF-cA4" secondAttribute="top" constant="12" id="asw-I6-KwM"/>
                         <constraint firstAttribute="trailing" secondItem="avB-8G-8PG" secondAttribute="trailing" constant="20" id="dnA-1x-6l9"/>
                         <constraint firstItem="avB-8G-8PG" firstAttribute="leading" secondItem="GVA-fF-cA4" secondAttribute="leading" constant="20" id="lSk-1P-rqh"/>
