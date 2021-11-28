@@ -11,6 +11,7 @@
 		4F51E10E2752E86F002BD112 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51E10D2752E86F002BD112 /* DBManager.swift */; };
 		4F51E1122752E8AD002BD112 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51E1112752E8AD002BD112 /* UserModel.swift */; };
 		4F51E1142752E8DE002BD112 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51E1132752E8DE002BD112 /* LoginManager.swift */; };
+		4F51E1172752FF2A002BD112 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51E1162752FF2A002BD112 /* NavigationViewController.swift */; };
 		4F56C4702751035C0028623B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56C46F2751035C0028623B /* AppDelegate.swift */; };
 		4F56C4722751035C0028623B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56C4712751035C0028623B /* SceneDelegate.swift */; };
 		4F56C4742751035C0028623B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56C4732751035C0028623B /* ViewController.swift */; };
@@ -58,6 +59,7 @@
 		4F51E10D2752E86F002BD112 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		4F51E1112752E8AD002BD112 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		4F51E1132752E8DE002BD112 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		4F51E1162752FF2A002BD112 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		4F56C46C2751035C0028623B /* Fawry-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fawry-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F56C46F2751035C0028623B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F56C4712751035C0028623B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +145,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		4F51E1152752FED8002BD112 /* Base Nav */ = {
+			isa = PBXGroup;
+			children = (
+				4F51E1162752FF2A002BD112 /* NavigationViewController.swift */,
+			);
+			path = "Base Nav";
+			sourceTree = "<group>";
+		};
 		4F56C4632751035C0028623B = {
 			isa = PBXGroup;
 			children = (
@@ -168,9 +178,9 @@
 		4F56C46E2751035C0028623B /* Fawry-Task */ = {
 			isa = PBXGroup;
 			children = (
-				4F51E10C2752DEF2002BD112 /* DataLayer */,
 				4F748A8727510D210072D9C4 /* App */,
 				4F748A8C27510D540072D9C4 /* Scenes */,
+				4F51E10C2752DEF2002BD112 /* DataLayer */,
 				4F748A8B27510D3A0072D9C4 /* Resources */,
 			);
 			path = "Fawry-Task";
@@ -218,6 +228,7 @@
 		4F748A8C27510D540072D9C4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4F51E1152752FED8002BD112 /* Base Nav */,
 				4F748AB027528AFF0072D9C4 /* HomeScreen */,
 				4F748A9D27511F6E0072D9C4 /* Registration */,
 				4F748A8D27510D680072D9C4 /* LoginModule */,
@@ -532,6 +543,7 @@
 				4F748A9027510D8A0072D9C4 /* LoginViewController.swift in Sources */,
 				4F56C4722751035C0028623B /* SceneDelegate.swift in Sources */,
 				4F51E1122752E8AD002BD112 /* UserModel.swift in Sources */,
+				4F51E1172752FF2A002BD112 /* NavigationViewController.swift in Sources */,
 				4F51E10E2752E86F002BD112 /* DBManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

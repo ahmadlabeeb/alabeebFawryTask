@@ -8,22 +8,48 @@
 import Foundation
 import RxSwift
 
+typealias SuccessBlock<T> =  ((T) -> (Void))
+typealias FailureBlock<T:Error> =  ((T) -> (Void))
 
 class LoginViewModel {
     
     
-    var loginModel : BehaviorSubject<UserModel>?
+    private var loginManager: LoginManager = LoginManager.manager
+    var errorMessage: BehaviorSubject<String?>? = BehaviorSubject.init(value: nil)
     
-    
-    func login(with mobile: String, password: String) {
+    func login(with mobile: String, password: String, success:SuccessBlock<UserModel>, failure: FailureBlock<FawryError> ) {
         if validation(for: mobile, password: password) {
-            
+            loginManager.login(with: mobile, password: password) { result in
+                switch result {
+                case .success(let user):
+                    success(user)
+                case .failure(let error):
+                    failure(error)
+                }
+            }
         }
     }
     
-    func validation(for mobile: String, password: String) -> Bool {
+    private func validation(for mobile: String, password: String) -> Bool {
+        
+        var message = ""
+        if mobile.isEmpty {
+            message = "mobile must not be empty"
+            errorMessage?.on(.next(message))
+            return false
+        }
+        if password.isEmpty {
+            message = "password must not be empty"
+            errorMessage?.on(.next(message))
+            return false
+        }
+        
+        if password.count < 8 {
+            message = "password must be at least 8 characters"
+            errorMessage?.on(.next(message))
+            return false
+        }
         
         return true
     }
 }
-
