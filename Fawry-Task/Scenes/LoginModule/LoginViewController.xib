@@ -139,18 +139,39 @@
                         <action selector="loginButtonTapped:" destination="-1" eventType="touchUpInside" id="OaA-Ou-iM9"/>
                     </connections>
                 </button>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="-9" translatesAutoresizingMaskIntoConstraints="NO" id="E9y-jg-V22">
+                    <rect key="frame" x="100.5" y="499" width="213.5" height="31"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do not have account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJB-oY-Yze">
+                            <rect key="frame" x="0.0" y="0.0" width="141.5" height="31"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RX8-nv-Tbg">
+                            <rect key="frame" x="132.5" y="0.0" width="81" height="31"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="register?"/>
+                            <connections>
+                                <action selector="registerButtonTapped:" destination="-1" eventType="touchUpInside" id="fwa-UK-4PQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" red="0.9882352941176471" green="0.84705882352941175" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.98694461580000004" green="0.82667952779999998" blue="0.1583163142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <color key="tintColor" red="0.1159148589" green="0.45865422490000002" blue="0.61114281420000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tEB-td-hks" secondAttribute="trailing" constant="20" id="1vr-Nz-wBN"/>
+                <constraint firstItem="E9y-jg-V22" firstAttribute="top" secondItem="tEB-td-hks" secondAttribute="bottom" constant="20" id="4Xd-I2-n1d"/>
                 <constraint firstItem="HZv-dQ-bzV" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.25" id="9TR-HM-e65"/>
                 <constraint firstItem="GVA-fF-cA4" firstAttribute="top" secondItem="HZv-dQ-bzV" secondAttribute="bottom" constant="10" id="JqN-LT-3gs"/>
                 <constraint firstItem="GVA-fF-cA4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XNT-Fb-tAY"/>
                 <constraint firstItem="tEB-td-hks" firstAttribute="top" secondItem="GVA-fF-cA4" secondAttribute="bottom" constant="20" id="YYU-Ul-KIj"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HZv-dQ-bzV" secondAttribute="trailing" id="eBJ-1q-pYF"/>
                 <constraint firstItem="HZv-dQ-bzV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fVx-pc-TbB"/>
+                <constraint firstItem="E9y-jg-V22" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fd3-CQ-ykv"/>
                 <constraint firstItem="GVA-fF-cA4" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="jeD-gN-c09"/>
                 <constraint firstItem="HZv-dQ-bzV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="o3z-BL-vNS"/>
                 <constraint firstItem="tEB-td-hks" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="t0v-jn-dce"/>

@@ -23,13 +23,15 @@ class LoginManager {
 enum FawryError:Error {
     case userNotFound
     case PasswordIncorrect
-    
+    case parseError
     func description() -> String {
         switch self {
         case .PasswordIncorrect:
             return "Incorrect Password"
         case .userNotFound:
             return "this user is not exist"
+        case .parseError:
+            return "Error in parsing json"
         }
     }
 }

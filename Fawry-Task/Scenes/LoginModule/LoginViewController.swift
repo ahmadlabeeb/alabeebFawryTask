@@ -58,6 +58,11 @@ class LoginViewController: UIViewController {
         })
     }
     
+    @IBAction func registerButtonTapped(_ sender: Any) {
+        let vc = RegisterViewController.init()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func alertWith(error: String) {
         let alert = UIAlertController.init(title: nil, message: error, preferredStyle: .alert)
         let action = UIAlertAction.init(title: "Ok", style: .cancel)

@@ -12,6 +12,12 @@
 		4F51E1122752E8AD002BD112 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51E1112752E8AD002BD112 /* UserModel.swift */; };
 		4F51E1142752E8DE002BD112 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51E1132752E8DE002BD112 /* LoginManager.swift */; };
 		4F51E1172752FF2A002BD112 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51E1162752FF2A002BD112 /* NavigationViewController.swift */; };
+		4F51E11A27530DB5002BD112 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51E11927530DB5002BD112 /* NetworkManager.swift */; };
+		4F51E11E27532395002BD112 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51E11C27532395002BD112 /* ImageCollectionViewCell.swift */; };
+		4F51E11F27532395002BD112 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F51E11D27532395002BD112 /* ImageCollectionViewCell.xib */; };
+		4F51E12227533656002BD112 /* BaseEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51E12127533656002BD112 /* BaseEndPoint.swift */; };
+		4F51E12427533670002BD112 /* HomeEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51E12327533670002BD112 /* HomeEndPoints.swift */; };
+		4F51E126275336C1002BD112 /* HomeImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51E125275336C1002BD112 /* HomeImageItem.swift */; };
 		4F56C4702751035C0028623B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56C46F2751035C0028623B /* AppDelegate.swift */; };
 		4F56C4722751035C0028623B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56C4712751035C0028623B /* SceneDelegate.swift */; };
 		4F56C4742751035C0028623B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56C4732751035C0028623B /* ViewController.swift */; };
@@ -60,6 +66,12 @@
 		4F51E1112752E8AD002BD112 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		4F51E1132752E8DE002BD112 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		4F51E1162752FF2A002BD112 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		4F51E11927530DB5002BD112 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4F51E11C27532395002BD112 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		4F51E11D27532395002BD112 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		4F51E12127533656002BD112 /* BaseEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEndPoint.swift; sourceTree = "<group>"; };
+		4F51E12327533670002BD112 /* HomeEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEndPoints.swift; sourceTree = "<group>"; };
+		4F51E125275336C1002BD112 /* HomeImageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeImageItem.swift; sourceTree = "<group>"; };
 		4F56C46C2751035C0028623B /* Fawry-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fawry-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F56C46F2751035C0028623B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F56C4712751035C0028623B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +134,7 @@
 		4F51E10C2752DEF2002BD112 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				4F51E11827530C9B002BD112 /* NetworkLayer */,
 				4F51E1102752E88D002BD112 /* Models */,
 				4F51E10F2752E876002BD112 /* Database */,
 			);
@@ -141,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				4F51E1112752E8AD002BD112 /* UserModel.swift */,
+				4F51E125275336C1002BD112 /* HomeImageItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -151,6 +165,33 @@
 				4F51E1162752FF2A002BD112 /* NavigationViewController.swift */,
 			);
 			path = "Base Nav";
+			sourceTree = "<group>";
+		};
+		4F51E11827530C9B002BD112 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				4F51E12027533620002BD112 /* EndPoints */,
+				4F51E11927530DB5002BD112 /* NetworkManager.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		4F51E11B2753236E002BD112 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4F51E11C27532395002BD112 /* ImageCollectionViewCell.swift */,
+				4F51E11D27532395002BD112 /* ImageCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4F51E12027533620002BD112 /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				4F51E12127533656002BD112 /* BaseEndPoint.swift */,
+				4F51E12327533670002BD112 /* HomeEndPoints.swift */,
+			);
+			path = EndPoints;
 			sourceTree = "<group>";
 		};
 		4F56C4632751035C0028623B = {
@@ -260,6 +301,7 @@
 		4F748AB027528AFF0072D9C4 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				4F51E11B2753236E002BD112 /* Cells */,
 				4F748ABB27528B3A0072D9C4 /* HomeViewModel.swift */,
 				4F748AB127528B220072D9C4 /* HomeViewController.swift */,
 				4F748AB227528B220072D9C4 /* HomeViewController.xib */,
@@ -401,6 +443,7 @@
 				4F748A9127510D8A0072D9C4 /* LoginViewController.xib in Resources */,
 				4F748AA127511FC40072D9C4 /* RegisterViewController.xib in Resources */,
 				4F56C47F2751035D0028623B /* LaunchScreen.storyboard in Resources */,
+				4F51E11F27532395002BD112 /* ImageCollectionViewCell.xib in Resources */,
 				4F56C47C2751035D0028623B /* Assets.xcassets in Resources */,
 				4F56C4772751035C0028623B /* Main.storyboard in Resources */,
 				4F748AB427528B220072D9C4 /* HomeViewController.xib in Resources */,
@@ -533,16 +576,21 @@
 			files = (
 				4F56C4742751035C0028623B /* ViewController.swift in Sources */,
 				4F56C4702751035C0028623B /* AppDelegate.swift in Sources */,
+				4F51E11E27532395002BD112 /* ImageCollectionViewCell.swift in Sources */,
 				4F748AA027511FC40072D9C4 /* RegisterViewController.swift in Sources */,
 				4F748ABC27528B3A0072D9C4 /* HomeViewModel.swift in Sources */,
+				4F51E12427533670002BD112 /* HomeEndPoints.swift in Sources */,
 				4F748AA927511FE40072D9C4 /* RegisterViewModel.swift in Sources */,
+				4F51E12227533656002BD112 /* BaseEndPoint.swift in Sources */,
 				4F51E1142752E8DE002BD112 /* LoginManager.swift in Sources */,
 				4F748A9627510DA30072D9C4 /* LoginViewModel.swift in Sources */,
+				4F51E126275336C1002BD112 /* HomeImageItem.swift in Sources */,
 				4F748AB327528B220072D9C4 /* HomeViewController.swift in Sources */,
 				4F56C47A2751035C0028623B /* Fawry_Task.xcdatamodeld in Sources */,
 				4F748A9027510D8A0072D9C4 /* LoginViewController.swift in Sources */,
 				4F56C4722751035C0028623B /* SceneDelegate.swift in Sources */,
 				4F51E1122752E8AD002BD112 /* UserModel.swift in Sources */,
+				4F51E11A27530DB5002BD112 /* NetworkManager.swift in Sources */,
 				4F51E1172752FF2A002BD112 /* NavigationViewController.swift in Sources */,
 				4F51E10E2752E86F002BD112 /* DBManager.swift in Sources */,
 			);

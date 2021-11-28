@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,7 +12,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="Fawry_Task" customModuleProvider="target">
             <connections>
+                <outlet property="confitmPasswordTextField" destination="0uP-bV-byu" id="pqR-Py-9Og"/>
+                <outlet property="mobileTextField" destination="3TG-5E-WVS" id="ztx-bi-PZH"/>
+                <outlet property="passwordTextField" destination="xnW-Y5-o2d" id="asx-lc-XEG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="roundedViews" destination="XA5-KH-s8P" collectionClass="NSMutableArray" id="BgC-Qu-bop"/>
+                <outletCollection property="roundedViews" destination="RYm-R9-YxT" collectionClass="NSMutableArray" id="O5b-Ot-41g"/>
+                <outletCollection property="roundedViews" destination="0tN-M7-skg" collectionClass="NSMutableArray" id="4ES-pc-eWm"/>
+                <outletCollection property="roundedViews" destination="7BD-nN-xEv" collectionClass="NSMutableArray" id="upw-Ia-YqC"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -25,9 +34,12 @@
                         <constraint firstAttribute="height" constant="46" id="dYp-GB-Nln"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                    <state key="normal" title="Login">
+                    <state key="normal" title="Register">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="registerUserButtonTapped:" destination="-1" eventType="touchUpInside" id="bd4-dy-7Gf"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lzK-BT-Pa0">
                     <rect key="frame" x="0.0" y="44" width="414" height="224"/>
@@ -38,12 +50,28 @@
                                 <constraint firstAttribute="width" secondItem="lIX-c7-Ua4" secondAttribute="height" multiplier="1:1" id="IeV-5t-ZHE"/>
                             </constraints>
                         </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62g-sX-P0e">
+                            <rect key="frame" x="8" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="424-Mk-9Du"/>
+                                <constraint firstAttribute="width" constant="50" id="Xdu-km-TE9"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title=" ">
+                                <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="large"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="Jrs-4v-AEJ"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="lIX-c7-Ua4" firstAttribute="top" secondItem="lzK-BT-Pa0" secondAttribute="top" id="DZG-Zu-6qi"/>
+                        <constraint firstItem="62g-sX-P0e" firstAttribute="top" secondItem="lzK-BT-Pa0" secondAttribute="top" id="Mdp-g5-vbU"/>
                         <constraint firstAttribute="bottom" secondItem="lIX-c7-Ua4" secondAttribute="bottom" id="OlV-7Q-2vg"/>
                         <constraint firstItem="lIX-c7-Ua4" firstAttribute="centerX" secondItem="lzK-BT-Pa0" secondAttribute="centerX" id="uOZ-Ep-L7e"/>
+                        <constraint firstItem="62g-sX-P0e" firstAttribute="leading" secondItem="lzK-BT-Pa0" secondAttribute="leading" constant="8" id="uWS-Kr-yNV"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1uR-2h-AnW">
@@ -155,7 +183,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" red="0.98777168989999997" green="0.84708946939999996" blue="0.157551676" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.98694461580000004" green="0.82667952779999998" blue="0.1583163142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <color key="tintColor" red="0.1159148589" green="0.45865422490000002" blue="0.61114281420000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="1uR-2h-AnW" firstAttribute="top" secondItem="lzK-BT-Pa0" secondAttribute="bottom" constant="10" id="4id-iH-gxc"/>
@@ -171,11 +199,12 @@
                 <constraint firstItem="7BD-nN-xEv" firstAttribute="top" secondItem="1uR-2h-AnW" secondAttribute="bottom" constant="20" id="l5k-1w-Hdi"/>
                 <constraint firstItem="lzK-BT-Pa0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rjF-z3-zxD"/>
             </constraints>
-            <point key="canvasLocation" x="132" y="125"/>
+            <point key="canvasLocation" x="131.8840579710145" y="124.55357142857142"/>
         </view>
     </objects>
     <resources>
         <image name="Fawry-Logo" width="365" height="365"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="lock.fill" catalog="system" width="128" height="128"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
