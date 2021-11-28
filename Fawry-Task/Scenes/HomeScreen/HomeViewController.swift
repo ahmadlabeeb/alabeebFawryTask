@@ -38,9 +38,13 @@ class HomeViewController: UIViewController {
         viewModel?.homeItemsSubject
             .observe(on: MainScheduler.instance)
             .asDriver(onErrorJustReturn: [])
-            
+        
             .drive(imagesCollectionView.rx.items(cellIdentifier: "cell",cellType: ImageCollectionViewCell.self)) { row,element,cell in
-                cell.configure(auName: element.author, imageUrl: element.downloadURL)
+                if (element.isMocImage ?? false){
+                    cell.configureAsMoc()
+                }else {
+                    cell.configure(auName: element.author, imageUrl: element.downloadURL)
+                }
             }.disposed(by: bag)
     }
     

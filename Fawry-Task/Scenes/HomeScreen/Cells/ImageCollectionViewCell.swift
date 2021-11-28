@@ -23,6 +23,12 @@ class ImageCollectionViewCell: UICollectionViewCell {
             auImageView.kf.setImage(with:url)
         }
     }
+    
+    func configureAsMoc() {
+        auNameLabel.text = ""
+        auImageView.image = UIImage.init(named: "moc-image")
+    }
+
 
 }
 

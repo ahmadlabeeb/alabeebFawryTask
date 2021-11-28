@@ -22,7 +22,7 @@ class HomeViewModel {
         networkManager.fetchRequest(request: endPoint) { [weak self] (result:Result<[HomeImageItem],Error>) in
             switch result {
             case .success(let items):
-                self?.homeItemsSubject.on(.next(items))
+                self?.successGetNewData(items: items)
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -36,23 +36,39 @@ class HomeViewModel {
         }else {
             getingMoreActive = true
         }
-        
         currentPage = currentPage + 1
         let endPoint = HomeEndPoints.getHomeList(currentPage, limit)
         networkManager.fetchRequest(request: endPoint) { [weak self] (result:Result<[HomeImageItem],Error>) in
             self?.getingMoreActive = false
             switch result {
             case .success(let items):
-                if let oldItems = try? self?.homeItemsSubject.value() {
-                    self?.homeItemsSubject.on(.next(oldItems + items))
-                }else {
-                    self?.homeItemsSubject.on(.next(items))
-                }
+                self?.successGetNewData(items: items)
             case .failure(let error):
                 print(error.localizedDescription)
             }
         }
+    }
+    
+    func successGetNewData(items : [HomeImageItem]) {
         
+        let newItems = insertMockItems(items: items)
+        
+        if let oldItems = try? self.homeItemsSubject.value() {
+            self.homeItemsSubject.on(.next(oldItems + newItems))
+        }else {
+            self.homeItemsSubject.on(.next(newItems))
+        }
+    }
+    
+    func insertMockItems(items : [HomeImageItem]) -> [HomeImageItem] {
+        var items = items
+        let count = limit / 5
+        print(count)
+        for i in 1...count {
+            let moc = HomeImageItem.init(id: "", author: "",isMocImage:true, width: nil, height: nil, url: nil, downloadURL: "")
+            items.insert(moc, at: (i * 5) + (i - 1))
+        }
+        return items
     }
     
 }

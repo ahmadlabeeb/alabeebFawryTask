@@ -6,14 +6,18 @@
 //
 
 import Foundation
+import RxSwift
 
 struct HomeImageItem: Codable {
-    let id, author: String
-    let width, height: Int
-    let url, downloadURL: String
-    
+    let id: String
+    let author: String
+    let isMocImage: Bool?
+    let width:Int?
+    let height: Int?
+    let url: String?
+    let downloadURL: String
     enum CodingKeys: String, CodingKey {
-        case id, author, width, height, url
+        case id, author, width, height, url,isMocImage
         case downloadURL = "download_url"
     }
 }
