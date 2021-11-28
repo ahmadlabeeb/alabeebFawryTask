@@ -19,9 +19,7 @@ class ImageCollectionViewCell: UICollectionViewCell {
     
     func configure(auName: String, imageUrl: String) {
         auNameLabel.text = auName
-        if let url = URL.init(string: imageUrl) {
-            auImageView.kf.setImage(with:url)
-        }
+        auImageView.fromUrlString(urlString: imageUrl)
     }
     
     func configureAsMoc() {

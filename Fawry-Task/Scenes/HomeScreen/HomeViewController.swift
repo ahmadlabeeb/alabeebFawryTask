@@ -19,6 +19,7 @@ class HomeViewController: UIViewController {
         setupUI()
         setupViewModel()
         setupImagesCollectionView()
+        setupImagesCollectionViewDidSelect()
         setUpPagination()
     }
     
@@ -46,6 +47,20 @@ class HomeViewController: UIViewController {
                     cell.configure(auName: element.author, imageUrl: element.downloadURL)
                 }
             }.disposed(by: bag)
+    }
+    
+    func setupImagesCollectionViewDidSelect() {
+        imagesCollectionView.rx.modelSelected(HomeImageItem.self).subscribe (onNext: {[weak self] (item) in
+            self?.NavToDetails(item: item)
+        }).disposed(by: bag)
+
+    }
+    
+    func NavToDetails(item:HomeImageItem) {
+        let vc = DetailsViewController.init()
+        let vm = DetailsViewModel.init(item: item)
+        vc.viewModel = vm
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func setUpPagination() {

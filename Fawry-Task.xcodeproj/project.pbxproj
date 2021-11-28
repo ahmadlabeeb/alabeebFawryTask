@@ -36,6 +36,10 @@
 		4F748AB327528B220072D9C4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F748AB127528B220072D9C4 /* HomeViewController.swift */; };
 		4F748AB427528B220072D9C4 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F748AB227528B220072D9C4 /* HomeViewController.xib */; };
 		4F748ABC27528B3A0072D9C4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F748ABB27528B3A0072D9C4 /* HomeViewModel.swift */; };
+		4FA60E522753AA1D001DCACB /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA60E502753AA1D001DCACB /* DetailsViewController.swift */; };
+		4FA60E532753AA1D001DCACB /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA60E512753AA1D001DCACB /* DetailsViewController.xib */; };
+		4FA60E552753AA38001DCACB /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA60E542753AA38001DCACB /* DetailsViewModel.swift */; };
+		4FA60E582753AB4B001DCACB /* UIImageExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA60E572753AB4B001DCACB /* UIImageExtention.swift */; };
 		96668AF5C60E202998CCB255 /* Pods_Fawry_TaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FDACF22A135BB0C5B51F6F /* Pods_Fawry_TaskTests.framework */; };
 		DF384319D8E84ED6AE50F764 /* Pods_Fawry_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40152D62B06A55A746E5637C /* Pods_Fawry_Task.framework */; };
 /* End PBXBuildFile section */
@@ -96,6 +100,10 @@
 		4F748AB127528B220072D9C4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4F748AB227528B220072D9C4 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		4F748ABB27528B3A0072D9C4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		4FA60E502753AA1D001DCACB /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		4FA60E512753AA1D001DCACB /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		4FA60E542753AA38001DCACB /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		4FA60E572753AB4B001DCACB /* UIImageExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtention.swift; sourceTree = "<group>"; };
 		8C65704C52B60A95269374E9 /* Pods_Fawry_Task_Fawry_TaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fawry_Task_Fawry_TaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDBBF251F1F15FF5F997805F /* Pods-Fawry-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fawry-Task.debug.xcconfig"; path = "Target Support Files/Pods-Fawry-Task/Pods-Fawry-Task.debug.xcconfig"; sourceTree = "<group>"; };
 		C792EC29D57815E3C94E6CFF /* Pods-Fawry-Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fawry-Task.release.xcconfig"; path = "Target Support Files/Pods-Fawry-Task/Pods-Fawry-Task.release.xcconfig"; sourceTree = "<group>"; };
@@ -219,6 +227,7 @@
 		4F56C46E2751035C0028623B /* Fawry-Task */ = {
 			isa = PBXGroup;
 			children = (
+				4FA60E562753AB29001DCACB /* Extentions */,
 				4F748A8727510D210072D9C4 /* App */,
 				4F748A8C27510D540072D9C4 /* Scenes */,
 				4F51E10C2752DEF2002BD112 /* DataLayer */,
@@ -269,6 +278,7 @@
 		4F748A8C27510D540072D9C4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4FA60E4F2753A9F1001DCACB /* Details */,
 				4F51E1152752FED8002BD112 /* Base Nav */,
 				4F748AB027528AFF0072D9C4 /* HomeScreen */,
 				4F748A9D27511F6E0072D9C4 /* Registration */,
@@ -307,6 +317,24 @@
 				4F748AB227528B220072D9C4 /* HomeViewController.xib */,
 			);
 			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		4FA60E4F2753A9F1001DCACB /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				4FA60E502753AA1D001DCACB /* DetailsViewController.swift */,
+				4FA60E542753AA38001DCACB /* DetailsViewModel.swift */,
+				4FA60E512753AA1D001DCACB /* DetailsViewController.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		4FA60E562753AB29001DCACB /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				4FA60E572753AB4B001DCACB /* UIImageExtention.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 		8198FEF473A381C9BB1B67A2 /* Frameworks */ = {
@@ -447,6 +475,7 @@
 				4F56C47C2751035D0028623B /* Assets.xcassets in Resources */,
 				4F56C4772751035C0028623B /* Main.storyboard in Resources */,
 				4F748AB427528B220072D9C4 /* HomeViewController.xib in Resources */,
+				4FA60E532753AA1D001DCACB /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +607,7 @@
 				4F56C4702751035C0028623B /* AppDelegate.swift in Sources */,
 				4F51E11E27532395002BD112 /* ImageCollectionViewCell.swift in Sources */,
 				4F748AA027511FC40072D9C4 /* RegisterViewController.swift in Sources */,
+				4FA60E582753AB4B001DCACB /* UIImageExtention.swift in Sources */,
 				4F748ABC27528B3A0072D9C4 /* HomeViewModel.swift in Sources */,
 				4F51E12427533670002BD112 /* HomeEndPoints.swift in Sources */,
 				4F748AA927511FE40072D9C4 /* RegisterViewModel.swift in Sources */,
@@ -585,6 +615,7 @@
 				4F51E1142752E8DE002BD112 /* LoginManager.swift in Sources */,
 				4F748A9627510DA30072D9C4 /* LoginViewModel.swift in Sources */,
 				4F51E126275336C1002BD112 /* HomeImageItem.swift in Sources */,
+				4FA60E552753AA38001DCACB /* DetailsViewModel.swift in Sources */,
 				4F748AB327528B220072D9C4 /* HomeViewController.swift in Sources */,
 				4F56C47A2751035C0028623B /* Fawry_Task.xcdatamodeld in Sources */,
 				4F748A9027510D8A0072D9C4 /* LoginViewController.swift in Sources */,
@@ -593,6 +624,7 @@
 				4F51E11A27530DB5002BD112 /* NetworkManager.swift in Sources */,
 				4F51E1172752FF2A002BD112 /* NavigationViewController.swift in Sources */,
 				4F51E10E2752E86F002BD112 /* DBManager.swift in Sources */,
+				4FA60E522753AA1D001DCACB /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
