@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ImageCollectionViewCell: UICollectionViewCell {
     
@@ -15,5 +16,13 @@ class ImageCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func configure(auName: String, imageUrl: String) {
+        auNameLabel.text = auName
+        if let url = URL.init(string: imageUrl) {
+            auImageView.kf.setImage(with:url)
+        }
+    }
 
 }
+

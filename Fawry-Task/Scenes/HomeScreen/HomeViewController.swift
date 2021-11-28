@@ -19,6 +19,7 @@ class HomeViewController: UIViewController {
         setupUI()
         setupViewModel()
         setupImagesCollectionView()
+        setUpPagination()
     }
     
     func setupUI() {
@@ -34,15 +35,27 @@ class HomeViewController: UIViewController {
     func setupImagesCollectionView() {
         imagesCollectionView.register(UINib.init(nibName: "ImageCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell")
         imagesCollectionView.delegate = self
-        viewModel?.homeItems
-            .observeOn(MainScheduler.instance)
+        viewModel?.homeItemsSubject
+            .observe(on: MainScheduler.instance)
             .asDriver(onErrorJustReturn: [])
             
             .drive(imagesCollectionView.rx.items(cellIdentifier: "cell",cellType: ImageCollectionViewCell.self)) { row,element,cell in
-                cell.auNameLabel.text = element.author
+                cell.configure(auName: element.author, imageUrl: element.downloadURL)
             }.disposed(by: bag)
     }
     
+    func setUpPagination() {
+        imagesCollectionView.rx.didScroll.subscribe { [weak self] _ in
+            guard let self = self else { return }
+            let offSetY = self.imagesCollectionView.contentOffset.y
+            let contentHeight = self.imagesCollectionView.contentSize.height
+
+            if offSetY > (contentHeight - self.imagesCollectionView.frame.size.height - 100) {
+                self.viewModel.getMoreHomeData()
+            }
+        }
+        .disposed(by: bag)
+    }
 
 }
 

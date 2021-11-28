@@ -20,6 +20,11 @@ class LoginViewController: UIViewController {
         setupUI()
         setupViewModel()
         setupObservers()
+        
+        #if DEBUG
+        mobileTextField.text = "01123654789"
+        passwordTextField.text = "4789678691"
+        #endif
     }
     
     func setupUI() {

@@ -9,6 +9,7 @@ target 'Fawry-Task' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'Alamofire'
+  pod 'Kingfisher'
   target 'Fawry-TaskTests' do
     inherit! :search_paths
     # Pods for testing

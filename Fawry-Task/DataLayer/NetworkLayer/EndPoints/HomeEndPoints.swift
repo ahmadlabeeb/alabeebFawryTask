@@ -8,16 +8,19 @@
 import Foundation
 import Alamofire
 
-enum HomeData: BaseEndPoint {
+enum HomeEndPoints: BaseEndPoint {
     
-    case getHomeList
+    case getHomeList(_ page: Int, _ limit: Int)
     
     var baseURL: String {
-        return "https://picsum.photos/v2/list?page=1&limit=10"
+        return "https://picsum.photos/v2/"
     }
     
     var path: String {
-        return ""
+        switch self {
+        case .getHomeList(let page, let limit):
+            return "list?page=\(page)&limit=\(limit)"
+        }
     }
     
     var method: HTTPMethod {
