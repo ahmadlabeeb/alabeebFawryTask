@@ -28,8 +28,8 @@ class LoginViewController: UIViewController {
     }
     
     func setupUI() {
-        
-        mobileTextField.keyboardType = .asciiCapable
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        mobileTextField.keyboardType = .asciiCapableNumberPad
         for view in roundedViews {
             view.layer.cornerRadius = 8
         }

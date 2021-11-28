@@ -16,7 +16,7 @@ class RegisterViewModel {
     
     func register(with mobile: String, password: String, confirmPassword: String, success:SuccessBlock<UserModel>, failure: FailureBlock<FawryError> ) {
         if validation(for: mobile, password: password, confirmPassword: confirmPassword) {
-            loginManager.login(with: mobile, password: password) { result in
+            loginManager.registerUser(with: mobile, password: password) { result in
                 switch result {
                 case .success(let user):
                     success(user)

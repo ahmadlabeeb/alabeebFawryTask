@@ -12,10 +12,36 @@ typealias LoginCompletionBlock = (Result<UserModel,FawryError>) -> Void
 class LoginManager {
     
     static let manager = LoginManager.init()
+    let dbManager = DBManager.init()
     
     func login(with mobile: String, password: String, complesion: LoginCompletionBlock) {
-        let user = UserModel.init(mobile: "", password: "", userName: "")
-        complesion(.success(user))
+        let items = dbManager.fetch(entityName: "Fawryuser")
+        let matchesItems = items.filter { object in
+            if let umobile = object.value(forKey: "mobile") as? String, let upassword = object.value(forKey: "password") as? String {
+                if ((password == upassword) && (umobile == mobile)) {
+                    return true
+                }
+            }
+            return false
+        }
+        if matchesItems.count > 0 {
+            let user = UserModel.init(mobile: mobile, password: password, userName: "")
+            complesion(.success(user))
+        }else {
+            complesion(.failure(.userNotFound))
+        }
+    }
+    
+    func registerUser(with mobile: String, password: String, complesion: LoginCompletionBlock) {
+        let dic = ["name":"", "mobile": mobile, "password": password]
+        let entityName = "Fawryuser"
+        dbManager.insertToDatabase(dict: dic, entityName: entityName, completion: { success in
+            if success {
+                complesion(.success(UserModel.init(mobile: mobile, password: password, userName: "")))
+            }else{
+                complesion(.failure(FawryError.userNotFound))
+            }
+        })
     }
 }
 

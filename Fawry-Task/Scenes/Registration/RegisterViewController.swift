@@ -26,8 +26,7 @@ class RegisterViewController: UIViewController {
     func setupUI() {
         
         self.navigationController?.setNavigationBarHidden(true, animated: false)
-        
-        mobileTextField.keyboardType = .asciiCapable
+        mobileTextField.keyboardType = .asciiCapableNumberPad
         for view in roundedViews {
             view.layer.cornerRadius = 8
         }
@@ -38,11 +37,25 @@ class RegisterViewController: UIViewController {
     }
     
     func setupObservers() {
-       
+        _ = viewModel?.errorMessage?.subscribe({[weak self] event in
+            switch event {
+            case .next(let message):
+                guard let message = message else{
+                    return
+                }
+                self?.alertWith(error: message)
+            default:
+                break
+            }
+        })
     }
     
     @IBAction func registerUserButtonTapped(_ sender: Any) {
-        
+        viewModel?.register(with: mobileTextField.text!, password: passwordTextField.text!, confirmPassword: confitmPasswordTextField.text!, success: { user in
+            self.navigationController?.popViewController(animated: true)
+        }, failure: { error in
+            alertWith(error: error.description())
+        })
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
