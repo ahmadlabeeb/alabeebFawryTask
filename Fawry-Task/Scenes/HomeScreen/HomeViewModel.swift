@@ -17,6 +17,13 @@ class HomeViewModel {
     private var currentPage = 1
     private let limit = 10
     private var getingMoreActive = false
+    
+    
+    func logout() {
+        let defaults = UserDefaultsManager.manager
+        defaults.saveLogin(status: false)
+    }
+    
     func getHomeData() {
         getingMoreActive = true
         let endPoint = HomeEndPoints.getHomeList(currentPage, limit)

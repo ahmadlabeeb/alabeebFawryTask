@@ -25,8 +25,25 @@ class HomeViewController: UIViewController {
     
     func setupUI() {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
+        addLogoutButton()
         let layout = imagesCollectionView.collectionViewLayout as? UICollectionViewFlowLayout
         layout?.minimumLineSpacing = 8
+    }
+    
+    func addLogoutButton() {
+        let barBtn = UIBarButtonItem.init(title: "Logout", style: .plain, target: self, action: #selector(logout))
+        self.navigationItem.setRightBarButton(barBtn, animated: false)
+        
+    }
+    
+    @objc func logout() {
+        viewModel.logout()
+        navToLogin()
+    }
+    
+    func navToLogin() {
+        let vc = LoginViewController.init()
+        self.navigationController?.setViewControllers([vc], animated: true)
     }
     
     func setupViewModel() {
