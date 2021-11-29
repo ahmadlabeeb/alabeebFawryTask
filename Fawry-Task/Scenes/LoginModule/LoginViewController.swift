@@ -22,8 +22,8 @@ class LoginViewController: UIViewController {
         setupObservers()
         
         #if DEBUG
-        mobileTextField.text = "01123654789"
-        passwordTextField.text = "4789678691"
+        mobileTextField.text = "111111"
+        passwordTextField.text = "aaaaaaaa"
         #endif
     }
     
@@ -57,15 +57,14 @@ class LoginViewController: UIViewController {
         let mobile = mobileTextField.text!
         let password = passwordTextField.text!
         viewModel?.login(with: mobile, password: password, success: { user in
-            navigateToVC(with: user)
+            navigateToHomeVC(with: user)
         }, failure: { error in
             alertWith(error: error.description())
         })
     }
     
     @IBAction func registerButtonTapped(_ sender: Any) {
-        let vc = RegisterViewController.init()
-        self.navigationController?.pushViewController(vc, animated: true)
+        navigateToRegisterVC()
     }
     
     func alertWith(error: String) {
@@ -75,12 +74,16 @@ class LoginViewController: UIViewController {
         self.present(alert, animated: true)
     }
     
-    func navigateToVC(with user: UserModel) {
+    func navigateToHomeVC(with user: UserModel) {
         let vc = HomeViewController.init()
         self.navigationController?.setViewControllers([vc], animated: true)
     }
     
-    
+    func navigateToRegisterVC() {
+        let vc = RegisterViewController.init()
+        vc.delegate = self
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
     @IBAction func showPasswordTapped(_ sender: UIButton) {
         if sender.isSelected {
@@ -90,5 +93,13 @@ class LoginViewController: UIViewController {
         }
         sender.isSelected = !sender.isSelected
     }
+    
+}
+
+extension LoginViewController: RegisterPageDelegate {
+    func didRegisterSuccessfully(with mobile: String) {
+        self.mobileTextField.text = mobile
+    }
+    
     
 }

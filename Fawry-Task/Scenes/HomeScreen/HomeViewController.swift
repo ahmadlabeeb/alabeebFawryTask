@@ -24,6 +24,7 @@ class HomeViewController: UIViewController {
     }
     
     func setupUI() {
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
         let layout = imagesCollectionView.collectionViewLayout as? UICollectionViewFlowLayout
         layout?.minimumLineSpacing = 8
     }
@@ -51,7 +52,9 @@ class HomeViewController: UIViewController {
     
     func setupImagesCollectionViewDidSelect() {
         imagesCollectionView.rx.modelSelected(HomeImageItem.self).subscribe (onNext: {[weak self] (item) in
-            self?.NavToDetails(item: item)
+            if !(item.isMocImage ?? false){
+                self?.NavToDetails(item: item)
+            }
         }).disposed(by: bag)
 
     }

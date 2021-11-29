@@ -18,15 +18,17 @@ class HomeViewModel {
     private let limit = 10
     private var getingMoreActive = false
     func getHomeData() {
-//        let endPoint = HomeEndPoints.getHomeList(currentPage, limit)
-//        networkManager.fetchRequest(request: endPoint) { [weak self] (result:Result<[HomeImageItem],Error>) in
-//            switch result {
-//            case .success(let items):
-//                self?.successGetNewData(items: items)
-//            case .failure(let error):
-//                print(error.localizedDescription)
-//            }
-//        }
+        getingMoreActive = true
+        let endPoint = HomeEndPoints.getHomeList(currentPage, limit)
+        networkManager.fetchRequest(request: endPoint) { [weak self] (result:Result<[HomeImageItem],Error>) in
+            self?.getingMoreActive = false
+            switch result {
+            case .success(let items):
+                self?.successGetNewData(items: items)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
         
     }
     

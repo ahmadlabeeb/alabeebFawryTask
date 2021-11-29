@@ -23,11 +23,17 @@ class LoginViewModel {
                 switch result {
                 case .success(let user):
                     success(user)
+                    saveLoginState()
                 case .failure(let error):
                     failure(error)
                 }
             }
         }
+    }
+    
+    func saveLoginState() {
+        let defaults = UserDefaultsManager.manager
+        defaults.saveLogin(status: true)
     }
     
     private func validation(for mobile: String, password: String) -> Bool {

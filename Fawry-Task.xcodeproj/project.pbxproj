@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1342ADB02EEF05E75A5F7629 /* Pods_Fawry_Task_Fawry_TaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C65704C52B60A95269374E9 /* Pods_Fawry_Task_Fawry_TaskUITests.framework */; };
+		4F4B2DDA27548F9100493D90 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4B2DD927548F9100493D90 /* UserDefaultsManager.swift */; };
 		4F51E10E2752E86F002BD112 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51E10D2752E86F002BD112 /* DBManager.swift */; };
 		4F51E1122752E8AD002BD112 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51E1112752E8AD002BD112 /* UserModel.swift */; };
 		4F51E1142752E8DE002BD112 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51E1132752E8DE002BD112 /* LoginManager.swift */; };
@@ -66,6 +67,7 @@
 		37B56B70E7732CC099782FF7 /* Pods-Fawry-Task-Fawry-TaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fawry-Task-Fawry-TaskUITests.release.xcconfig"; path = "Target Support Files/Pods-Fawry-Task-Fawry-TaskUITests/Pods-Fawry-Task-Fawry-TaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		40152D62B06A55A746E5637C /* Pods_Fawry_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fawry_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		497699ABA63091597869EC2B /* Pods-Fawry-TaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fawry-TaskTests.release.xcconfig"; path = "Target Support Files/Pods-Fawry-TaskTests/Pods-Fawry-TaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		4F4B2DD927548F9100493D90 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		4F51E10D2752E86F002BD112 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		4F51E1112752E8AD002BD112 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		4F51E1132752E8DE002BD112 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			children = (
 				4F51E10D2752E86F002BD112 /* DBManager.swift */,
 				4F51E1132752E8DE002BD112 /* LoginManager.swift */,
+				4F4B2DD927548F9100493D90 /* UserDefaultsManager.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -610,6 +613,7 @@
 				4FA60E582753AB4B001DCACB /* UIImageExtention.swift in Sources */,
 				4F748ABC27528B3A0072D9C4 /* HomeViewModel.swift in Sources */,
 				4F51E12427533670002BD112 /* HomeEndPoints.swift in Sources */,
+				4F4B2DDA27548F9100493D90 /* UserDefaultsManager.swift in Sources */,
 				4F748AA927511FE40072D9C4 /* RegisterViewModel.swift in Sources */,
 				4F51E12227533656002BD112 /* BaseEndPoint.swift in Sources */,
 				4F51E1142752E8DE002BD112 /* LoginManager.swift in Sources */,

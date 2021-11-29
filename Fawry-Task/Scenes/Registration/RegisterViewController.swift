@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol RegisterPageDelegate {
+    func didRegisterSuccessfully(with mobile : String)
+}
+
 class RegisterViewController: UIViewController {
     
     @IBOutlet weak var mobileTextField: UITextField!
@@ -15,6 +19,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet var roundedViews: [UIView]!
     
     var viewModel: RegisterViewModel?
+    var delegate: RegisterPageDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,10 +57,15 @@ class RegisterViewController: UIViewController {
     
     @IBAction func registerUserButtonTapped(_ sender: Any) {
         viewModel?.register(with: mobileTextField.text!, password: passwordTextField.text!, confirmPassword: confitmPasswordTextField.text!, success: { user in
-            self.navigationController?.popViewController(animated: true)
+            navBackToLogin(user: user)
         }, failure: { error in
             alertWith(error: error.description())
         })
+    }
+    
+    func navBackToLogin(user: UserModel) {
+        delegate?.didRegisterSuccessfully(with: user.mobile)
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
