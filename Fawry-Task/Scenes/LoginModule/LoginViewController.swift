@@ -22,8 +22,8 @@ class LoginViewController: UIViewController {
         setupObservers()
         
         #if DEBUG
-        mobileTextField.text = "111111"
-        passwordTextField.text = "aaaaaaaa"
+        //mobileTextField.text = "111111"
+        //passwordTextField.text = "aaaaaaaa"
         #endif
     }
     
